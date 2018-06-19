@@ -1,0 +1,23 @@
+{
+  "name": "mydeadline",
+  "version": "1.0.0",
+  "description": "Keeps me on track",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiteshdua1/MyDeadline.git"
+  },
+  "author": "Hitesh Dua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hiteshdua1/MyDeadline/issues"
+  },
+  "homepage": "https://github.com/hiteshdua1/MyDeadline#readme"
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
