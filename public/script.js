@@ -10,21 +10,22 @@ let timer = setInterval(function() {
   const diff = theDDay.getTime() - today;
 
   // math
-  let weekends = Math.floor(diff / (1000 * 60 * 60 * 24))/4; 
+  let weekendDays = CalculateWeekendDays(new Date(Date.now()),theDDay);
+  let weekdays = weekendDays/2;
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
   let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  // let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
 
   // display
   document.getElementById("timer").innerHTML =
     "<div class=\"days\"> \
   <div class=\"numbers\">" + CalculateWeekendDays(new Date(Date.now()),theDDay) + "</div>Weekend Days</div> \
 <div class=\"hours\"> \
-  <div class=\"numbers\">" + days + "</div>days</div> \
+  <div class=\"numbers\">" + weekdays + "</div>weekdays</div> \
 <div class=\"minutes\"> \
-  <div class=\"numbers\">" + hours + "</div>hours</div> \
+  <div class=\"numbers\">" + days + "</div>days</div> \
 <div class=\"seconds\"> \
-  <div class=\"numbers\">" + minutes + "</div>minutes</div> \
+  <div class=\"numbers\">" + hours + "</div>hours</div> \
 </div>";
 
 }, 1000);
