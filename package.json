@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/hiteshdua1/MyDeadline/issues"
   },
-  "homepage": "https://github.com/hiteshdua1/MyDeadline#readme"
+  "homepage": "https://github.com/hiteshdua1/MyDeadline#readme",
   "dependencies": {
     "express": "^4.16.2"
   }
